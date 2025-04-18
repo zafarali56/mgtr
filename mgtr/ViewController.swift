@@ -56,7 +56,7 @@ extension ViewController: UITableViewDelegate{
         let detailViewController = UIViewController()
         detailViewController.view.backgroundColor = .gray
         detailViewController.modalPresentationStyle = .fullScreen
-        present(detailViewController, animated: true)
+        navigationController?.pushViewController(detailViewController, animated: true)
         
     }
 }
