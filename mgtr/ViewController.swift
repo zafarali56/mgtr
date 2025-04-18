@@ -52,5 +52,11 @@ extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("User tapped on cell at \(indexPath) index path")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let detailViewController = UIViewController()
+        detailViewController.view.backgroundColor = .gray
+        detailViewController.modalPresentationStyle = .fullScreen
+        present(detailViewController, animated: true)
+        
     }
 }
